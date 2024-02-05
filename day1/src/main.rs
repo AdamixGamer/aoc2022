@@ -12,6 +12,7 @@ fn main() {
     let result: u64 = result[(len-3)..].into_iter().sum();
     println!("{result}");  
 }
+
 fn number(string: &str) -> u64 {
     string.lines().map(|x| x.parse::<u64>().unwrap()).sum()
 }
